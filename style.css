@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-container {
+    padding: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #111B47; /* HEX */
+    color: #FFFFFF;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-primary-little{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #111B47; /* HEX */
+    color: #FFFFFF;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-outlined {
+    background: transparent;
+    border: 1px solid #adcee9;
+    color: #173a56;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/* ----- Navbar ----- */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    color: #091133;
+    font-size: 26px;
+}
+
+.navbar-buy-now-button {
+    width: 160px;
+    display: none;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.navbar-links a {
+    font-size: 14px;
+    color: #505F98;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+.background-image-down{
+    background-image: url(./imagini/fundal-albastru-jos.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .navbar-mobile-menu {
+        display: none;
+    }
+    .navbar-buy-now-button {
+        display: inline-block;
+    }
+    .navbar-links {
+        display: block;
+    }
+    .navbar-logo {
+        margin-left: -80px;
+    }
+
+    .margin-top-mobile{
+        margin-top: 240px;
+    }
+    .margin-top{
+        margin-top: 200px;
+    }
+    
+    .margin-small{
+        margin-top: 12px;
+    }
+    
+    .margin-top-med{
+        margin-top: 100px;
+    }
+
+}
+
+
+
+/* ----- Header ----- */
+.header-container {
+    height: calc(100vh - 63px - 32px);
+    background-image: url("./imagini/header-image.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 32px;
+    color: #091133;
+    margin-bottom: 24px;
+}
+
+.header-paragraph {
+    text-align: center;
+    font-size: 18px;
+    color: #505F98;
+}
+
+.header-buttons {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.product-price-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    background-image: url(./imagini/umbra-section.png);
+}
+
+.product-price-subtitle{
+max-width: 600px;
+text-align: center;
+}
+
+.margin-top-container{
+    margin-top: 200px;
+}
+
+
+
+.flex{
+    display: flex;
+    gap: 16px;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.responsive-section {
+    flex-direction: column;
+}
+
+.footer-line{
+height: 1px;
+background-color: #CDD1D4;
+}
+
+@media (min-width: 500px) {
+    .header-title {
+        text-align: left;
+        max-width: 400px;
+    }
+    .header-paragraph {
+        text-align: left;
+        max-width: 400px;
+    }
+    .header-buttons {
+        justify-content: start;
+    }
+    .margin-top-mobil{
+        margin-top: 40px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        background-position: right;
+        background-size: contain;
+    }
+    .header-title {
+        font-size: 50px;
+        max-width: 540px;
+    }
+    .header-paragraph {
+        max-width: 540px;
+    }
+
+    .responsive-section{
+        flex-direction: row;
+    }
+    .margin-top-mobil{
+        margin-top: 40px;
+    }
+}
