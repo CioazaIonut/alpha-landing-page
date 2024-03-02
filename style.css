@@ -278,6 +278,15 @@ body {
   color: #5d6970;
 }
 
+.container-simple {
+  color: #5d6970;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .sub-section img {
     margin: 0;
