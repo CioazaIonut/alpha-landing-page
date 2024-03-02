@@ -8,9 +8,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Common */
 .section-container {
     padding: 16px;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #091133;
+    text-align: center;
+}
+
+.section-paragraph {
+    font-size: 16px;
+    color: #6F7CB2;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 540px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,7 +79,45 @@ body {
     padding-right: 30px;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+.margin-small {
+    margin-top: 12px;
+}
+
+.flex {
+    display: flex;
+    gap: 16px;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.responsive-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .section-title {
+        font-size: 36px;
+        text-align: left;
+    }
+    .section-paragraph {
+        text-align: left;
+    }
+    .margin-top {
+        margin-top: 108px;
+    }
+    .flex {
+        gap: 32px;
+    }
+}
 
 /* ----- Navbar ----- */
 .navbar-container {
@@ -108,25 +168,7 @@ body {
     .navbar-logo {
         margin-left: -80px;
     }
-
-    .margin-top-mobile{
-        margin-top: 240px;
-    }
-    .margin-top{
-        margin-top: 200px;
-    }
-    
-    .margin-small{
-        margin-top: 12px;
-    }
-    
-    .margin-top-med{
-        margin-top: 100px;
-    }
-
 }
-
-
 
 /* ----- Header ----- */
 .header-container {
@@ -158,43 +200,6 @@ body {
     gap: 16px;
 }
 
-.product-price-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 800px;
-    background-image: url(./imagini/umbra-section.png);
-}
-
-.product-price-subtitle{
-max-width: 600px;
-text-align: center;
-}
-
-.margin-top-container{
-    margin-top: 200px;
-}
-
-
-
-.flex{
-    display: flex;
-    gap: 16px;
-}
-
-.justify-between{
-    justify-content: space-between;
-}
-
-.responsive-section {
-    flex-direction: column;
-}
-
-.footer-line{
-height: 1px;
-background-color: #CDD1D4;
-}
 
 @media (min-width: 500px) {
     .header-title {
@@ -208,10 +213,6 @@ background-color: #CDD1D4;
     .header-buttons {
         justify-content: start;
     }
-    .margin-top-mobil{
-        margin-top: 40px;
-    }
-
 }
 
 @media (min-width: 1024px) {
@@ -226,11 +227,59 @@ background-color: #CDD1D4;
     .header-paragraph {
         max-width: 540px;
     }
-
     .responsive-section{
         flex-direction: row;
     }
-    .margin-top-mobil{
-        margin-top: 40px;
+}
+
+/* Sub-section */
+.sub-section img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sub-section h4 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.sub-section h6 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5D6970;
+}
+
+@media (min-width: 1024px) {
+    .sub-section img {
+        margin: 0;
     }
+    .sub-section h4 {
+        text-align: left;
+    }
+    .sub-section h6 {
+        text-align: left;
+    }
+}
+
+/* Product Price Section */
+.product-price-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    background-image: url(./imagini/umbra-section.png);
+}
+
+.product-price-subtitle{
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Footer */
+.footer-line{
+    height: 1px;
+    background-color: #CDD1D4;
 }
