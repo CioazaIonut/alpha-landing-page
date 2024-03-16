@@ -53,22 +53,6 @@ body {
   cursor: pointer;
 }
 
-.button-primary-little {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  background-color: #111b47; /* HEX */
-  color: #ffffff;
-
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
-
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .button-outlined {
   background: transparent;
   border: 1px solid #adcee9;
@@ -81,25 +65,17 @@ body {
   cursor: pointer;
 }
 
-/*daca fac butonul de 8 px este prea mic. acest comentariu l-am laat doar pentru curs*/
-.button-primary-middle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  background-color: #111b47; /* HEX */
-  color: #ffffff;
-
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .button-mobil {
   text-align: center;
+}
+
+.button-outlined:hover {
+  background-color: #111b47;
+  color: #ffffff;
+}
+.button-primary:hover {
+  background: transparent;
+  color: #173a56;
 }
 
 .margin-top {
@@ -312,7 +288,7 @@ body {
 
 /* Footer */
 .footer-container {
-  background-color: #E7ECFF;
+  background-color: #e7ecff;
   padding: 16px;
 }
 
@@ -324,12 +300,12 @@ body {
 
 .copywrite {
   font-size: 14px;
-  color: #939EA4;
+  color: #939ea4;
   text-align: center;
 }
 
 .footer-logo {
-  color: #37447E;
+  color: #37447e;
   font-size: 26px;
   text-align: center;
 }
@@ -356,7 +332,7 @@ body {
 }
 
 .footer-links a {
-  color: #2245E3;
+  color: #2245e3;
   font-size: 14px;
   text-decoration: none;
 }
@@ -396,5 +372,14 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     gap: 30px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .margin-top-s {
+    margin-top: 36px;
+  }
+  .margin-top-simple {
+    margin-top: 60px;
   }
 }
