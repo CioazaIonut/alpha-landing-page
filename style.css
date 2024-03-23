@@ -49,8 +49,14 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 
+  border-color: #111b47;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 4px;
   cursor: pointer;
+
+  transition-property: background, color;
+  transition-duration: 0.25s;
 }
 
 .button-outlined {
@@ -63,6 +69,8 @@ body {
   padding-right: 30px;
   border-radius: 4px;
   cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.25s;
 }
 
 .button-mobil {
@@ -70,8 +78,8 @@ body {
 }
 
 .button-outlined:hover {
-  background-color: #111b47;
-  color: #ffffff;
+  background-color: #adcee9;
+  color: #111b47;
 }
 .button-primary:hover {
   background: transparent;
@@ -200,6 +208,10 @@ body {
   gap: 16px;
 }
 
+.desktop-image {
+  display: none;
+}
+
 @media (min-width: 500px) {
   .header-title {
     text-align: left;
@@ -228,6 +240,9 @@ body {
   }
   .responsive-section {
     flex-direction: row;
+  }
+  .desktop-image {
+    display: block;
   }
 }
 
